@@ -1,11 +1,12 @@
 # utils.py
-# TITAN-X BOMBER UTILITIES
 # Developed by: MAINUL ISLAM
+# WhatsApp: +8801308850528
+# GitHub: M41NUL
+# Copyright © 2026 MAINUL - X | TITAN-X BOMBER
 
 import random
 from datetime import datetime
 
-# তোমার দেওয়া USER_AGENTS লিস্ট
 USER_AGENTS = [
     "Mozilla/5.0 (Linux; Android 14; RMX3840) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6261.64 Mobile Safari/537.36",
     "Mozilla/5.0 (Linux; Android 13; RMX3708) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Mobile Safari/537.36",
@@ -29,10 +30,8 @@ USER_AGENTS = [
 ]
 
 def get_random_agent():
-    """র‍্যান্ডম ইউজার-এজেন্ট"""
     return random.choice(USER_AGENTS)
 
 def log_message(msg, msg_type="INFO"):
-    """লগ মেসেজ"""
     timestamp = datetime.now().strftime("%H:%M:%S")
     return f"[{timestamp}] {msg_type}: {msg}"
